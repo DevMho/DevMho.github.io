@@ -1,0 +1,111 @@
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.robots {
+}
+
+.head,.torso,.left_hand,.left_leg,.right_hand,.right_leg{
+    background-color: rgb(67, 175, 25);
+}
+
+.head{
+    width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+}
+.eyes {
+	
+}
+
+.head:hover {
+	width: 300px;
+	transition: 3s ease-in-out;
+	background-color: rgba(173, 13, 13, 0.7);
+}
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+    margin: 0 auto;
+}
+.left_hand, .right_hand{ 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+.left_hand { 
+	margin-right: 10px; 
+	transition: transform 1s;
+} 
+
+.right_hand { 
+	margin-left: 10px; 
+	transition: transform 2s;
+	transform-origin:  top;
+} 
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+} 
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+	display: inline-block;
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg { 
+	margin-left: 30px; 
+}
+.right_leg:hover{
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(-20deg);
+}
+
+.eye_left, .eye_right { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: black;  
+} 
+
+.eye_left { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.eye_right { 
+	 position: relative;
+	top: 82px; 
+	left: 140px; 
+}
